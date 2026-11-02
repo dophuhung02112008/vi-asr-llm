@@ -1,0 +1,16 @@
+# Lõi (đánh giá, sinh dữ liệu, hàng rào) — chạy được không cần GPU
+numpy
+pyvi              # tách từ tiếng Việt cho WER theo từ (tuỳ chọn; hoặc underthesea)
+pytest
+# ASR
+faster-whisper>=1.0
+# LLM + fine-tune
+torch
+transformers>=4.44
+peft>=0.11
+accelerate
+safetensors
+bitsandbytes ; platform_system == "Linux"   # QLoRA 4-bit trên GPU NVIDIA
+# Dữ liệu HF (FLEURS...) và giao diện demo
+datasets
+gradio

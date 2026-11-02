@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+# dữ liệu và mô hình lớn — không đưa lên GitHub
+data/raw/
+data/manifest.jsonl
+data/asr_hyps*.jsonl
+data/sft/
+*.wav
+*.mp3
+*.flac
+*.tar.gz
+*.tgz
+*.safetensors
+*.bin
+runs/*/best/
+runs/*/last/
+runs/qwen*_lora*/
+
+# dữ liệu demo sinh tự động (tạo lại bằng scripts/build_sft_data.py)
+data/sft_demo/
